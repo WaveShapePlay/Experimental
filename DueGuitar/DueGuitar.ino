@@ -18,7 +18,7 @@ void setup()
 void loop()
 {
   //Read the ADCs
-  while((ADC->ADC_ISR & 0x80)==0);
+  while((ADC->ADC_ISR & 0x80) != 0x80);   // Single statment - wait for ADC conversion of ADC0
   in_ADC0=ADC->ADC_CDR[7];               // read data from ADC0
 
   
