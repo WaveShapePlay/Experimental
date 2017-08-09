@@ -1,7 +1,0 @@
-trying to understand the following logic:
-  while((ADC->ADC_ISR & 0x80)==0)
-
-
-
-link:
-https://forum.arduino.cc/index.php?topic=137635.0
