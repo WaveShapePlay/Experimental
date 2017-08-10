@@ -1,5 +1,5 @@
 
-int in_ADC0, in_ADC1;  
+int in_ADC0;
 
 
 
