@@ -2,7 +2,6 @@
 int in_ADC0;
 
 
-
 void setup()
 {
   //ADC Configuration
@@ -12,7 +11,6 @@ void setup()
 
   //DAC Configuration
   analogWrite(DAC0,0);  // Enables DAC0
-
 }
 
 void loop()
@@ -25,5 +23,4 @@ void loop()
   //Write the DACs
   dacc_set_channel_selection(DACC_INTERFACE, 0);       //select DAC channel 0
   dacc_write_conversion_data(DACC_INTERFACE, in_ADC0);//write on DAC
-
 }
