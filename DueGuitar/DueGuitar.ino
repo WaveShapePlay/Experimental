@@ -5,9 +5,9 @@ int in_ADC0;
 void setup()
 {
   //ADC Configuration
-  ADC->ADC_MR |= 0x80;   // ADC in free running mode.
-  ADC->ADC_CR=2;         // Starts ADC conversion.
-  ADC->ADC_CHER=0x80;  // Enable ADC channel 0
+  ADC->ADC_MR |= 0x80;        // Mode Register - Select free running mode for ADC.
+  ADC->ADC_CR = 0x02;         // Control Register - Begin conversion
+  ADC->ADC_CHER = 0x80;       // Enable ADC channel 0
 
   //DAC Configuration
   analogWrite(DAC0,0);  // Enables DAC0
