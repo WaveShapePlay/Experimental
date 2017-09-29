@@ -13,8 +13,8 @@ for u in range(0,5):
 print('\n')
 print('Example 3:')
 
-sal = 50000
+salary = 50000
 # Printing out 5% raise over 4 years
 for y in range(0,4):
-    sal = sal + sal*0.05
-    print(sal)
+    salary = salary + salary*0.05
+    print(salary)
