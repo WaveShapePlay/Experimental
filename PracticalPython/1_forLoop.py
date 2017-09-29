@@ -14,7 +14,7 @@ print('\n')
 print('Example 3:')
 
 sal = 50000
-# Printing out 5% rasis over 4 years
+# Printing out 5% raise over 4 years
 for y in range(0,4):
     sal = sal + sal*0.05
     print(sal)
