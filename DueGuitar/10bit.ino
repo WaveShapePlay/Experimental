@@ -4,7 +4,7 @@ int in_ADC0;
 void setup()
 {
   
-  ADC->ADC_MR |= 0x80;        // Mode Register - Select free running mode for ADC.
+  ADC->ADC_MR |= 0x90;        // Mode Register - Select free running mode for ADC.
   ADC->ADC_CR = 0x02;         // Control Register - Begin conversions
   ADC->ADC_CHER = 0x80;       // Channel Enable Register - Selects the correstponding ADC channels 
                               // A0 = CH7, A1 = CH6, A2 = CH5, A3 = CH4
