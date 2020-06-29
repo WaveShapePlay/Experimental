@@ -79,7 +79,7 @@ class FinanceCalculations{
             FV_totals.append(FV_SingleValue[y] + FV_Monthly[y])
         }
         
-        return FV_totalsa
+        return FV_totals
     }
     
 }
