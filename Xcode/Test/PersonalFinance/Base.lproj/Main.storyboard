@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalFinance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Finance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2T-eq-VJd">
+                                <rect key="frame" x="142" y="198" width="130.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Salary" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-kJ-a9t">
+                                <rect key="frame" x="173" y="351" width="68" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eow-MX-7fK">
+                                <rect key="frame" x="175" y="629" width="64" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RlT-ac-3IX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mi9-bj-DKy">
+                                <rect key="frame" x="165.5" y="492.5" width="83.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Raise" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-V6-v21">
+                                <rect key="frame" x="175.5" y="411" width="63" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3a0-kJ-a9t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ot-AJ-xdA"/>
+                            <constraint firstItem="eow-MX-7fK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3iT-RR-DgA"/>
+                            <constraint firstItem="eow-MX-7fK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="200" id="Ld0-c5-WTm"/>
+                            <constraint firstItem="mi9-bj-DKy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="55" id="MCa-a0-Lsb"/>
+                            <constraint firstItem="0kb-V6-v21" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qhv-Lf-kUT"/>
+                            <constraint firstItem="0kb-V6-v21" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="gYF-Z1-qhA"/>
+                            <constraint firstItem="B2T-eq-VJd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0z-FD-dLd"/>
+                            <constraint firstItem="B2T-eq-VJd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-240" id="oJ7-6L-3C9"/>
+                            <constraint firstItem="mi9-bj-DKy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t7p-k4-ML5"/>
+                            <constraint firstItem="3a0-kJ-a9t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="wQR-en-ms8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="raiseTextInput" destination="0kb-V6-v21" id="2sD-xS-b0X"/>
+                        <outlet property="salaryTextInput" destination="3a0-kJ-a9t" id="KNf-hp-5qb"/>
+                        <outlet property="totalValueLabel" destination="mi9-bj-DKy" id="a2V-Sj-57F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
